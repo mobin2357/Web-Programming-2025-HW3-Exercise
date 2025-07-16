@@ -1,0 +1,76 @@
+.title-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #40adc2;
+    padding: 15px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 1000px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .top-button {
+    padding: 10px 20px;
+    background-color: #02e7fc;
+    background-color: #2e3bed;
+    background-color: #7d4caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+  }
+  
+  .top-button:hover {
+    transform: scale(1.05);
+  }
+
+  .editableTitle {
+    cursor: pointer;
+    transition: color 0.2s ease;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .editableTitle:hover {
+    background-color: #fcf0bf;  
+    background-color: #faf3d6;
+    color: #007bff;
+  }
+  
+  .titleEditContainer {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .titleInput {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    background-color: white;
+    background-color: rgb(190, 206, 250);
+    background-color: #e6f0fa;
+    outline: none;
+    font-family: inherit;
+    min-width: 200px;
+    text-align: left;
+  }
+  
+  .titleInput:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }

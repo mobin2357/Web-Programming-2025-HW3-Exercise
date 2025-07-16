@@ -1,0 +1,39 @@
+.butt {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .butt:focus {
+    outline: none;
+  }
+  
+  .shape-button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .shape-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .shape-stroke {
+    fill: none;
+    stroke: black;
+    stroke-width: 3;
+  }
+  
+  .selected-stroke {
+    stroke: blue;
+  }
+
+  .noHover:hover {
+    transform: none !important;
+  }
+
+  .pointerNone {
+    pointer-events: none;
+  }
+  
+  

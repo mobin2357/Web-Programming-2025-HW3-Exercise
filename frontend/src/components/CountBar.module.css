@@ -1,0 +1,12 @@
+.count-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #f0afe8;
+    background-color: #79f7d8;
+    background-color: #6bf8d5;
+    padding: 15px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }

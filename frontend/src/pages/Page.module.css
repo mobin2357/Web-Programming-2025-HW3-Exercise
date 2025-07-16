@@ -1,0 +1,30 @@
+.group1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.group2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.return-button {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #06ed12;
+  background-color: #0920ed;
+  color: aliceblue;
+  border: 4px solid rgb(244, 207, 21);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  z-index: 1000;
+}
+
+.return-button:hover {
+  background-color: rgb(110, 194, 240);
+}

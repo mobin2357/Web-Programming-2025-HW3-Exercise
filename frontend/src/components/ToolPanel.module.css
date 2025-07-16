@@ -1,0 +1,152 @@
+.tools-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #aee1eb;
+  padding: 15px 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  gap: 15px;
+}
+
+.tool-button {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  background: none;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.shape {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  transition: border 0.3s;
+}
+
+  /* Individual shapes inside buttons */
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.square {
+  border: 4px solid black;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid black;
+}
+
+.selected.circle,
+.selected.square {
+  border-color: #007bff;
+}
+
+.selected.triangle {
+  border-bottom-color: #007bff;
+}
+
+.butt {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 34.64px solid black; /* Creates an equilateral triangle */
+  fill: none;
+}
+
+/* Change border color to blue when button is clicked */
+.butt:active .triangle {
+  border-bottom-color: blue;
+}
+
+/* Maintain blue color after click using focus */
+.butt:focus {
+  outline: none;
+}
+
+.butt:focus .triangle {
+  border-bottom-color: blue;
+}
+
+.triangle {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+}
+
+/* Change stroke to blue when clicked */
+.butt:active .triangle {
+  stroke: blue;
+}
+
+/* Keep blue after click */
+.butt:focus {
+  outline: none;
+}
+
+.butt:focus .triangle {
+  stroke: blue;
+}
+
+.triangle-button {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.triangle-button:hover {
+  transform: scale(1.1);
+}
+
+.triangle-stroke {
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+  transition: stroke 0.2s ease;
+}
+
+.triangle-button:active .triangle-stroke {
+  stroke: blue;
+}
+
+/* Hide the checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Label acts as the button */
+label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.triangle {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+}
+
+/* Change stroke to blue when checkbox is checked */
+input[type="checkbox"]:checked + label .triangle {
+  stroke: blue;
+}
